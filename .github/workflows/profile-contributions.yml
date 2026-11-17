@@ -38,6 +38,7 @@ jobs:
         shell: bash
         run: |
           cp profile-3d-contrib/profile-season.svg dist/island-light.svg
+          cp profile-3d-contrib/profile-season-animate.svg dist/island-light-motion.svg
           cp profile-3d-contrib/profile-night-rainbow.svg dist/island-dark.svg
           for file in dist/snake-{light,dark}.svg; do
             grep -q '</style>' "$file"
